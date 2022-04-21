@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tom and jerry</title>
+  <link rel="shortcut icon"
+    href="data:image/png;base64,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"
+    type="image/x-icon">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/9accf19553.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="bg1">
+    <header>
+      <div class="container">
+        <div class="row" id="md-header">
+          <nav class="navbar navbar-light bg-light fixed-top">
+            <div class="container-fluid logo">
+              <a class="navbar-brand" href="#"><img src="./images/logo.png" class="logo" alt="logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Tom and jerry</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-center pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Roadmap</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Team</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="row" id="lg-header">
+          <div class="col-lg-3 col-md-4 col-sm-6 logo">
+            <img src="./images/logo.png" alt="">
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 menu">
+            <ul>
+              <li><a href="">About</a></li>
+              <li><a href="">Roadmap</a></li>
+              <li><a href="">Team</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-6 social-media">
+            <ul>
+              <li><i class="fa-solid fa-vr-cardboard"></i></li>
+              <li><i class="fa-brands fa-twitter"></i></li>
+              <li><i class="fa-brands fa-instagram"></i></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 wallet">
+            <button>Sign up</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="main">
+
+      <div class="container">
+
+        <div class="row ">
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 order-lg-1 order-md-1 order-sm-1">
+            <img src="./tom.jpg" class="img-set alt=">
+          </div>
+          <div
+            class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 order-lg-2 order-md-3 order-sm-3 flex-column mt-5">
+            <img src="./images/logo.png" class="img-top" alt="">
+            <p class="numbers">0 / 10,0000 Mints</p>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item"><a class="page-link minus" href="#">-</a></li>
+                <li class="page-item"><a class="page-link digit" href="#">1</a></li>
+                <li class="page-item"><a class="page-link plus" href="#">+</a></li>
+              </ul>
+            </nav>
+            <button>MINT NOW</button>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 order-lg-3 order-md-2 order-sm-2">
+
+            <img src="./jerry.png" class="img-set" alt="">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main2">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1>WHAT THE Fu*K IS THIS?</h1>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 ">
+          <p>The story behind Grumpy Bear Town goes back a few years. The first "old" Grumpy Bear in
+            town was just an ordinary bear. This naked bear without clothes and accessories exists only once in the
+            NFT
+            collection. After the town was founded, Grumpy Bear Town developed into a diverse town with many bears.
+            All
+            his offspring are diverse and have different traits. There are bears that are common and bears that are
+            very
+            rare. In addition, there is a ultra rare bear, which visits our collection from the future universe!</p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <img src="./tandjerry.jpg" width="320px" height="320px" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="main3">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1>RARITY</h1>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 flex-column flex">
+          <h1>STATS</h1>
+          <h3>Mint Prices:</h3>
+          <p>1 - 2,500 NFTs will be sold at 0.15 ETH</p>
+          <p>2,501 - 5,000 NFTs will be sold at 0.2 ETH</p>
+          <p>5,001 - 10,000 NFTs will be sold at 0.25 ETH</p>
+          <h4>Max. Mint amount per wallet: </h4>
+          <p> 100</p>
+          <h4>Max. Mint amount whitelist: </h4>
+          <p>1'000 pcs</p>
+          <h4>Token name: </h4>
+          <p>GBTC</p>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 flex-column ">
+
+
+          <div class="row">
+            <!-- <h1>TRAITS</h1> -->
+          </div>
+          <div class="row justify-content-between d-flex">
+
+            <img src="./both tom and jerry.jpg" width="320px" height="320px" alt="">
+            <!-- <h4>Outfits</h4>
+              <p>20</p> -->
+          </div>
+          <!-- <h4>Shoes</h4> -->
+          <!-- <div class="pl">
+<img src="./both tom and jerry.jpg" alt="">
+</div>   -->
+          <!-- <p>11</p>
+            <h4>Jewellery</h4>
+            <p>08</p>
+            <h4>Headwear/sunglasses</h4>
+            <p>09</p>
+            <h4>Items</h4>
+            <p>08</p>
+            <h4>Backgrounds</h4>
+            <p>06</p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="roadmap">
+    <div class="container">
+      <div class="row flex-column">
+        <div class="col-12 d-flex justify-content-center p-5">
+          <h1>ROADMAP</h1>
+        </div>
+        <div class="row d-flex justify-content-center watch p-3 yellow">
+          <div class="col-lg-2 col-md-3 col-sm-12">
+            <img src="./important.png" alt="">
+          </div>
+          <div class="col-lg-10 col-md-9 col-sm-12 watch flex-column">
+            <h1>IMPORTANT NOTICE!</h1>
+            <h2>There is one Grumpy Bear with a Rolex GMT-Master II Pepsi. The one who mints this NFT will be rewarded
+              with an original one worth around 30’000 USD!</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2 col-lg-2 col-md-3 col-sm-12">
+            <h1>10%</h1>
+          </div>
+          <div class="col-10 col-lg-10 col-md-9 col-sm-12 watch flex-column">
+            <h2>Giveaway of 10 NFTs for the most active discord and instagram users</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2 col-lg-2 col-md-3 col-sm-12">
+            <h1>25%</h1>
+          </div>
+          <div class="col-10 col-lg-10 col-md-9 col-sm-12 watch flex-column">
+            <h2>Airdrop 20 NFTs to random twenty holders</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2 col-lg-2 col-md-3 col-sm-12">
+            <h1>50%</h1>
+          </div>
+          <div class="col-10 col-lg-10 col-md-9 col-sm-12 watch flex-column">
+            <h2>Investors will choose charity. 25k USD will be donated to two projects. The community will choose
+              between five different social and environmental projects on discord</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2 col-lg-2 col-md-3 col-sm-12">
+            <h1>75%</h1>
+          </div>
+          <div class="col-10 col-lg-10 col-md-9 col-sm-12 watch flex-column">
+            <h2>We will launch our own Grumpy Bear Town Club merchandising. All holders will get a special surprise!
+            </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2 col-lg-2 col-md-3 col-sm-12">
+            <h1>100%</h1>
+          </div>
+          <div class="col-10 col-lg-10 col-md-9 col-sm-12 watch flex-column">
+            <h2>We are sold out ! We will announce a huge giveaway for one random holder (approximatly worth 100’000
+              USD)</h2>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="team">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-12 d-flex justify-content-center p-5">
+          <h1>TEAM</h1>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 flex-column d-flex justify-content-center face">
+          <img src="./fa/butch cat.webp" alt="">
+          <h4>@Rubel</h4>
+          <p>Administration Development</p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 flex-column d-flex justify-content-center face">
+          <img src="./fa/jerry.webp" alt="">
+          <h4>@Batrok</h4>
+          <p>Administration Development</p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 flex-column d-flex justify-content-center face">
+          <img src="./fa/tom.jpg" alt="">
+          <h4>@Babaram</h4>
+          <p>Marketing</p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 flex-column d-flex justify-content-center face">
+          <img src="./fa/spick.jpg" alt="">
+          <h4>@GGRol</h4>
+          <p>Sales</p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 flex-column d-flex justify-content-center face">
+          <img src="./fa/duck.webp" alt="">
+          <h4>@SPPR</h4>
+          <p>Full Stack and Blockchain</p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 flex-column d-flex justify-content-center face">
+          <img src="./fa/tom.jpg" alt="">
+          <h4>@MrWonkerz</h4>
+          <p>Technical Support and Development</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <div class="faqs">
+    <div class="container">
+      <div class="row flex-column">
+        <div class="col d-flex justify-content-center p-5">
+          <h1>FAQS</h1>
+        </div>
+        <div class="col-12">
+          <h4>What is the Grumpy Bear Town Club?</h4>
+          <p>Grumpy Bear Town Club is a collection of 10,000 unique NFTs living in bearish town on the ETH
+            block
+            chain.
+            The Project is inspired by our love for bears and NFTs.</p>
+        </div>
+        <div class="col-12">
+          <h4>How much does a Grumpy Bear cost?</h4>
+          <p>The official Grumpy Bear Town Club sale will begin at 0.15 ETH + Gas Fee for the first 2’500
+            pieces.
+            Afterwards the price rises to 0.2 for the NFTs between 2’001 – 5’000 and later to 0.25 ETH + Gas
+            Fee for
+            the
+            pieces between 5’001 – 10’000.</p>
+        </div>
+        <div class="col-12">
+          <h4>When is the minting date?</h4>
+          <p>The mint date will be on 31th May. Minting will go live at 19:00 UTC. The total supply will be
+            10’000
+            Grumpy Bears.</p>
+        </div>
+        <div class="col-12">
+          <h4>Will there be a presale?</h4>
+          <p>There will be a presale. This will only be available to whitelist members. There are 1,000 seats
+            available.
+            The price in the presale will be only 0.1 ETH. You can find out how to qualify for the whitelist
+            in our
+            Discord channel.</p>
+        </div>
+        <div class="col-12">
+          <h4>How do I get on the whitelist?</h4>
+          <p>Our goal is to build a strong community and grow organically. We want to reward our community and
+            give
+            the
+            most committed members the opportunity to get the NFTs at a lower price. You can find out exactly
+            what
+            activities you need to complete on our Discord channel. Let's Grump the Bear!</p>
+        </div>
+        <div class="col-12">
+          <h4>How can I buy a Grumpy Bear Town Club?</h4>
+          <ol>
+            <li>Download the metamask.io extension to your browser</li>
+            <li>Purchase Ethereum from various exchanges, such as Coinbase or Binance</li>
+            <li>Send Ethereum from this exchange to your MetaMask wallet</li>
+            <li>When it is time to mint, open the Grumpy Bear Town Club website and select the number of NFTs
+              you wish
+              to purchase</li>
+            <li>Click «Mint» button, Metamask will popup asking for connection</li>
+            <li>Confirm the transaction and any associated fees</li>
+            <li>Once you have made your purchase, your NFTs will appear in you wallet and on OpenSea</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 flex-column d-flex justify-content-center">
+          <img src="./fa/both.jpg" alt="">
+          <img src="./images/logo.png" alt="">
+          <h5>© 2021 tom and jerry nft landing page</h5>
+          <ul class="d-flex">
+            <li><i class="fa-solid fa-vr-cardboard"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+          </ul>
+
+
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
